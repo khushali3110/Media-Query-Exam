@@ -3,34 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Blog Post</title>
+    <title>Responsive Blog Post with Social Icons</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: sans-serif;
         }
 
-        section{
+        section {
             width: 100%;
-            height: auto;
             display: flex;
             justify-content: space-evenly;
             flex-wrap: wrap;
-            
+            background-color: #f8f9fa;
+            padding: 20px 0;
         }
 
-        
-
-       
-
-        .card{
+        .card {
             margin: 20px;
-            width: 100%;
-            height: auto;
+            width: 35%;
             border: 2px solid gray;
             background-color: rgb(245, 240, 235);
             box-shadow: 0px 0px 15px grey;
@@ -39,127 +34,105 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding: 20px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
 
-        .image{
-            margin: 10px;
-            width: auto;
-            height: auto;
-            float: left;
-
-
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 20px gray, 0px 0px 40px lightgray;
         }
 
-        img{
+        .image {
             width: 100%;
-            aspect-ratio: 4/3;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
             object-fit: cover;
-            
-           
         }
 
-        h2{
-            font-size: 30px;
+        h2 {
+            font-size: 24px;
+            margin: 15px 0;
+            text-align: center;
+            color: #333;
         }
-        p{
-            margin: 10px;
+
+        p {
+            margin: 10px 0;
             text-align: justify;
+            font-size: 20px;
+            line-height: 1.6;
+            color: #555;
+            font-family: cursive;
         }
 
-        i{
-            margin: 10px;
-            align-self: flex-start;
-            font-size: 40px;
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 15px 0;
         }
 
-        h3{
-            font-size: 30px;
-            padding: 5px;
-            background-color:rgb(204, 177, 142) ;
+        .social-icons i {
+            font-size: 24px;
+            color: #555;
+            transition: color 0.2s ease-in-out;
+        }
+
+        .social-icons i:hover {
+            color: #007bff;
+        }
+
+        h3 {
+            font-size: 20px;
+            padding: 10px 20px;
+            background-color: rgb(204, 177, 142);
             border-radius: 5px;
-            margin: 10px;
-        }
-
-        .card:hover{
-            transition: ease-in-out 0.2s;
-            transform: scale(0.96);
+            margin: 10px 0;
             cursor: pointer;
-            box-shadow: 0px 0px 10px gray,
-                        0px 0px 20px gray,
-                        0px 0px 30px gray;
+            text-align: center;
+            transition: background-color 0.3s ease-in-out;
         }
 
-        i:hover{
-            color: brown;
+        h3:hover {
+            background-color: #007bff;
+            color: #fff;
         }
 
-        h3:hover{
-            border: 2px solid black;
-        }
-
-
-
-
-        @media screen and (max-width: 1400px){
-            section{
-                background-color: blueviolet;
-            }
-
-            .card{
-                width: 30%;
-            }
-
-            
-        }
-
-
-        @media screen and (max-width: 1200px){
-            section{
-                background-image: linear-gradient( rgb(200, 101, 117) , rgb(164, 129, 147) );
-            }
-
-            .card{
+        @media screen and (max-width: 1200px) {
+            .card {
                 width: 45%;
             }
-
-            
         }
-       
-       
-        @media screen and (max-width: 800px){
-            section{
-               background-color: cyan;
-            }
 
-            .card{
+        @media screen and (max-width: 800px) {
+            .card {
                 width: 90%;
             }
-
-            
         }
     </style>
 </head>
 <body>
    <section>
-    
-    
         <div class="card">
-            <div class="image"><img src="./download.jpg" alt=""></div>
-           
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam nisi rem laborum eaque earum provident incidunt dolorem nostrum officia magnam consequuntur deleniti, ad nulla atque nesciunt nemo obcaecati eos reiciendis eius sint ex saepe esse? Nam veritatis laboriosam inventore expedita quas doloribus a saepe earum minus tenetur, fugit reiciendis ullam repellendus, ea id facere! Facere esse minus nesciunt ex voluptatibus cumque temporibus qui voluptas, quasi quo et debitis dolorum magnam accusamus incidunt. Harum, aspernatur atque voluptas quis officiis inventore sequi veritatis ex quos dolor necessitatibus porro quas eius sint rem quam possimus mollitia, neque consequuntur nam? Reprehenderit labore molestiae corporis.</p>
-           
+            <div class="image">
+                <img src="./download.jpg" alt="Blog Post">
+            </div>
+            <h2>Blog Post Title</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus repellat molestiae maiores eum, unde soluta perspiciatis nostrum ab, at modi sed error voluptates sit numquam consequatur iste temporibus? Repellendus, eius!</p>
+            <div class="social-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
             <h3>Read More</h3>
         </div>
-   
-    
-    
-        
    </section>
-            
-
-            
-            
-
-
 </body>
 </html>
