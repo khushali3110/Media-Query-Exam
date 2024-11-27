@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog Post</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        section{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            
+        }
+
+        
+
+       
+
+        .card{
+            margin: 20px;
+            width: 100%;
+            height: auto;
+            border: 2px solid gray;
+            background-color: rgb(245, 240, 235);
+            box-shadow: 0px 0px 15px grey;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image{
+            margin: 10px;
+            width: auto;
+            height: auto;
+            float: left;
+
+
+        }
+
+        img{
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            
+           
+        }
+
+        h2{
+            font-size: 30px;
+        }
+        p{
+            margin: 10px;
+            text-align: justify;
+        }
+
+        i{
+            margin: 10px;
+            align-self: flex-start;
+            font-size: 40px;
+        }
+
+        h3{
+            font-size: 30px;
+            padding: 5px;
+            background-color:rgb(204, 177, 142) ;
+            border-radius: 5px;
+            margin: 10px;
+        }
+
+        .card:hover{
+            transition: ease-in-out 0.2s;
+            transform: scale(0.96);
+            cursor: pointer;
+            box-shadow: 0px 0px 10px gray,
+                        0px 0px 20px gray,
+                        0px 0px 30px gray;
+        }
+
+        i:hover{
+            color: brown;
+        }
+
+        h3:hover{
+            border: 2px solid black;
+        }
+
+
+
+
+        @media screen and (max-width: 1400px){
+            section{
+                background-color: blueviolet;
+            }
+
+            .card{
+                width: 30%;
+            }
+
+            
+        }
+
+
+        @media screen and (max-width: 1200px){
+            section{
+                background-image: linear-gradient( rgb(200, 101, 117) , rgb(164, 129, 147) );
+            }
+
+            .card{
+                width: 45%;
+            }
+
+            
+        }
+       
+       
+        @media screen and (max-width: 800px){
+            section{
+               background-color: cyan;
+            }
+
+            .card{
+                width: 90%;
+            }
+
+            
+        }
+    </style>
+</head>
+<body>
+   <section>
+    
+    
+        <div class="card">
+            <div class="image"><img src="./download.jpg" alt=""></div>
+           
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam nisi rem laborum eaque earum provident incidunt dolorem nostrum officia magnam consequuntur deleniti, ad nulla atque nesciunt nemo obcaecati eos reiciendis eius sint ex saepe esse? Nam veritatis laboriosam inventore expedita quas doloribus a saepe earum minus tenetur, fugit reiciendis ullam repellendus, ea id facere! Facere esse minus nesciunt ex voluptatibus cumque temporibus qui voluptas, quasi quo et debitis dolorum magnam accusamus incidunt. Harum, aspernatur atque voluptas quis officiis inventore sequi veritatis ex quos dolor necessitatibus porro quas eius sint rem quam possimus mollitia, neque consequuntur nam? Reprehenderit labore molestiae corporis.</p>
+           
+            <h3>Read More</h3>
+        </div>
+   
+    
+    
+        
+   </section>
+            
+
+            
+            
+
+
+</body>
+</html>

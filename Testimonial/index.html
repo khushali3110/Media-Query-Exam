@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test-moinum</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        
+        .container{
+            width: 100vw;
+            height: 650px;
+            background:linear-gradient(white , rgb(234, 165, 165));
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .box{
+            height: 550px;
+            width: 450px;
+            /* border: 2px solid black; */
+            padding-top: 30px;
+            margin: 40px; 
+            border-radius: 10px;
+            text-align: center;
+            background: linear-gradient(rgb(165, 61, 131) , rgb(255, 70, 163));
+        }
+
+        .img1{
+            height: 250px;
+            width: 250px;
+            border-radius: 950px;
+            margin-top: 10px;
+        }
+
+        .box h3{
+            padding: 15px;
+        }
+
+         p{
+            font-size: 20px;
+        }
+
+        button{
+            background-color: blue;
+            color: aliceblue;
+            font-weight: 40px;
+            
+            margin: 15px;
+            border-radius: 5px;
+            font-size: 25px;
+            height: 80px;
+            width: 150px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        button:hover{
+            background-color: antiquewhite;
+            color: black;
+        }
+
+        @media  (max-width:1369px){
+            .container{
+                background:linear-gradient(rgb(169, 106, 214), rgb(89, 111, 12)); 
+                width: 100%;
+                height: fit-content;
+                flex-wrap: wrap;
+                justify-content: space-evenly;  
+            }
+
+            button{
+                background-color: antiquewhite;
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="./photoshoot-9175252_640.webp" alt="" class="img1">
+            <h3>Elfa</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita tenetur tempora, eum amet eius quaerat nobis. Veniam expedita dignissimos facilis.</p>
+            <button>Read More</button>
+        </div>
+        <div class="box">
+            <img src="./photoshoot-9175211_640.webp" alt="" class="img1">
+            <h3>Giva</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita tenetur tempora, eum amet eius quaerat nobis. Veniam expedita dignissimos facilis.</p>
+            <button>Read More</button>
+        </div>
+        <div class="box">
+            <img src="./woman-4570763_640.jpg" alt="" class="img1">
+            <h3>Emilay</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita tenetur tempora, eum amet eius quaerat nobis. Veniam expedita dignissimos facilis.</p>
+            <button>Read More</button>
+        </div>
+    </div>
+</body>
+</html>
